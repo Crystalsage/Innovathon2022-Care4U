@@ -17,4 +17,8 @@
     <color name="blue_grotto">#60A3D9</color>
     <color name="royal_blue">#0074B7</color>
     <color name="navy_blue">#003B73</color>
+
+    <color name="smokyWhite">#fafafa</color>
+
+    <color name="colorRed">#C11515</color>
 </resources>

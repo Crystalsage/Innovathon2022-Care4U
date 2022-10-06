@@ -23,6 +23,7 @@ public class UserHomeDashboard extends AppCompatActivity  implements BottomNavig
         bottomNavigationView.setSelectedItemId(R.id.home_user);
     }
     DashHome homedash = new DashHome();
+    DashProfile dashprof = new DashProfile();
 
     @Override
     public boolean onNavigationItemSelected(@NonNull MenuItem item) {
@@ -32,10 +33,10 @@ public class UserHomeDashboard extends AppCompatActivity  implements BottomNavig
                 getSupportFragmentManager().beginTransaction().replace(R.id.flFragment, homedash).commit();
                 return true;
 
-//            case R.id.home:
-//                getSupportFragmentManager().beginTransaction().replace(R.id.container, secondFragment).commit();
-//                return true;
-//
+            case R.id.profile_user:
+                getSupportFragmentManager().beginTransaction().replace(R.id.flFragment, dashprof).commit();
+                return true;
+
 //            case R.id.settings:
 //                getSupportFragmentManager().beginTransaction().replace(R.id.container, thirdFragment).commit();
 //                return true;
