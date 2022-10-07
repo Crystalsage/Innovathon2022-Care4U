@@ -19,6 +19,10 @@ Following are the features provided in this application:
 5. Appointment system with provision for emergency consultation.
 
 
+## Block diagram
+![image](https://user-images.githubusercontent.com/51860725/194475323-5bbea224-56be-4f01-8c42-87fb063798ec.png)
+
+
 ## Technical details
 * Java (Primary language)
 * Websockets (for chatting)
