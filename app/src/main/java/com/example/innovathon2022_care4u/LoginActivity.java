@@ -18,13 +18,14 @@ public class LoginActivity extends AppCompatActivity {
     EditText password;
 
     TextView forgot_password;
+    Button login_button;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.authentication);
 
-        Button login_button = (Button) findViewById(R.id.login);
+        login_button = (Button) findViewById(R.id.login);
 
         email = (EditText) findViewById(R.id.email);
         password = (EditText) findViewById(R.id.password);
@@ -33,7 +34,8 @@ public class LoginActivity extends AppCompatActivity {
         forgot_password.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                Intent i = new Intent(LoginActivity.this, ForgotPassword.class);
+                startActivity(i);
             }
         });
 
@@ -41,6 +43,7 @@ public class LoginActivity extends AppCompatActivity {
         login_button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                Toast.makeText(LoginActivity.this, "CLICKED", Toast.LENGTH_SHORT);
                 if (password.getText().toString().equals("vedant1234") && email.getText().toString().equals("vedant@gmail.com")) {
                     Intent i = new Intent(LoginActivity.this, UserHomeDashboard.class);
                     LoginActivity.this.startActivity(i);

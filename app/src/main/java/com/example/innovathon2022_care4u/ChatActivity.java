@@ -55,14 +55,19 @@ public class ChatActivity extends AppCompatActivity {
         }
 
 
-        Toast.makeText(ChatActivity.this,"Connecting client!", Toast.LENGTH_SHORT).show();
-        try {
-            ws_client = new WS4u_Client(new URI("ws://localhost:9001"));
-            ws_client.connectBlocking();
-            client_signal.setBackgroundColor(getResources().getColor(R.color.red));
-        } catch (InterruptedException | URISyntaxException e) {
-            e.printStackTrace();
-        }
+        client_signal.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                try {
+                    ws_client = new WS4u_Client(new URI("ws://localhost:9001"));
+                    ws_client.connectBlocking();
+                    client_signal.setBackgroundColor(getResources().getColor(R.color.red));
+                    client_signal.setWidth(Integer.parseInt("105dp"));
+                } catch (InterruptedException | URISyntaxException e) {
+                    e.printStackTrace();
+                }
+            }
+        });
 
 
         send_message.setOnClickListener(new View.OnClickListener() {
@@ -70,15 +75,17 @@ public class ChatActivity extends AppCompatActivity {
             public void onClick(View view) {
                 if (clients_turn) {
                     author.setText("Client");
+                    // ws_client.send(message.toString());
                     message_content.setText(message.getText());
                     clients_turn = false;
                 } else {
-                    author.setText("Server");
+                    author.setText("Counselor");
+                    // ws_stuff.broadcast(message.toString());
                     message_content.setText(message.getText());
                     clients_turn = true;
                 }
 
-               message.setText("");
+                message.setText("");
             }
         });
 

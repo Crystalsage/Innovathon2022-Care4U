@@ -6,6 +6,7 @@
     android:orientation="vertical"
     android:background="#EBEBEB"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:backgroundTint="@color/grey"
     tools:context=".DashHome">
 
     <LinearLayout
@@ -16,6 +17,7 @@
     <TextView
         android:layout_width="match_parent"
         android:text="Patient Dashboard"
+        android:fontFamily="@font/lato"
         android:textAlignment="center"
         android:textStyle="bold"
         android:textColor="@color/black"
@@ -62,6 +64,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Welcome !"
+            android:fontFamily="@font/lato"
             android:textColor="@color/black"
             android:textStyle="bold"
             android:layout_margin="10dp"
@@ -116,6 +119,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Your daily quote for today !"
+                    android:fontFamily="@font/lato"
                     android:textColor="@color/black"
                     android:textStyle="bold"
                     android:layout_margin="10dp"
@@ -128,6 +132,7 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
+                    android:fontFamily="@font/lato"
                     android:text="An apple day keeps doctor away"
                     android:layout_margin="5dp"
                     android:textColor="@color/black"
@@ -169,6 +174,7 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:fontFamily="@font/lato"
                         android:text="Daily Feeds By Counsellors"
                         android:textColor="@color/black"
                         android:textStyle="bold"

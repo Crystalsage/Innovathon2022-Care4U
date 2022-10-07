@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/grey"
     tools:context=".DashProfile">
 
 
@@ -53,6 +54,7 @@
             <TextView
                 android:id="@+id/appointments"
                 android:layout_width="wrap_content"
+                android:fontFamily="@font/lato"
                 android:text="Your Appointments"
                 android:textSize="28sp"
                 android:textColor="@color/black"
@@ -83,6 +85,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:text="View Profile"
+                android:fontFamily="@font/lato"
                 android:textColor="@color/black"
                 android:textSize="28sp"
                 android:id="@+id/view_my_profile"
@@ -113,6 +116,7 @@
                 android:id="@+id/log_out"
                 android:layout_width="wrap_content"
                 android:text="Logout"
+                android:fontFamily="@font/lato"
                 android:textColor="@color/black"
                 android:textSize="28sp"
                 android:layout_margin="15dp"
@@ -127,6 +131,8 @@
 
     <TextView
         android:id="@+id/textView"
+        android:fontFamily="@font/lato"
+        android:backgroundTint="@color/grey"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"

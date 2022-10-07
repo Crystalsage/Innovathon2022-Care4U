@@ -133,24 +133,20 @@
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="View Details of Counsellor">
+                android:text="View Details of Counsellor"
+                android:fontFamily="@font/lato"
+                android:backgroundTint="@color/navy_blue">
 
             </Button>
 
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Cancel Appointment">
+                android:text="Cancel Appointment"
+                android:fontFamily="@font/lato"
+                android:backgroundTint="@color/navy_blue">
 
             </Button>
-
-
-
-
-
-
-
-
         </LinearLayout>
 
 
