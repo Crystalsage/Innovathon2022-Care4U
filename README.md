@@ -1,14 +1,14 @@
 # Care4U
-This is an application made with love by **Team Alpha** for Innovathon 2022.
+This is an application made with ❤️  by **Team Alpha** for Innovathon 2022.
+
+<img src="https://user-images.githubusercontent.com/51860725/194475489-06861af1-6511-4760-97cc-b75187a9159d.png" alt="alt text" width="300" height="250">
+
 
 ## Project overview
 This application bridges your local counselors with you, so that you can get the best treatment, that you deserve!
 
 ## Methodology
-This project uses a database of counselors that is scraped from the internet.
-
-There is an appointment system at the core of our application that processes and schedules all of the patient-counselor interaction.
-
+This project uses a database of counselors that is scraped from the internet.There is an appointment system at the core of our application that processes and schedules all of the patient-counselor interaction.
 
 Following are the features provided in this application:
 
